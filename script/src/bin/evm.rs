@@ -564,7 +564,7 @@ async fn prove_doge_transaction(req: web::Json<DogeTxRequest>) -> impl Responder
     };
 
     // === Step 2: Verify recipient address ===
-    const EXPECTED_RECIPIENT: &str = "DPGGRKJaKtTkNhc6uodtdyQEyv8RsWxL6H";
+    const EXPECTED_RECIPIENT: &str = "DHGrS3MYGyKzRVdMNxziTPF7QXvaYoEndA";
     let mut total_doge = 0u64;
     let mut sender_address = String::new();
 
@@ -711,6 +711,7 @@ async fn main() -> std::io::Result<()> {
     .await
 
 }
+
 
 
 
